@@ -1,0 +1,332 @@
+[
+  {
+    "id": "bio001",
+    "subject": "Biology",
+    "chapter": "Cell: The Unit of Life",
+    "topic": "Cell organelles",
+    "source": "NCERT",
+    "difficulty": "Easy",
+    "question": {
+      "en": "Which organelle is primarily responsible for ATP production in eukaryotic cells?",
+      "hi": "यूकेरियोटिक कोशिकाओं में ATP के उत्पादन के लिए मुख्य रूप से कौन-सा कोशिकांग उत्तरदायी है?"
+    },
+    "options": {
+      "en": [
+        "Ribosome",
+        "Mitochondrion",
+        "Golgi apparatus",
+        "Lysosome",
+        "None of the above"
+      ],
+      "hi": [
+        "राइबोसोम",
+        "माइटोकॉन्ड्रिया",
+        "गॉल्जी तंत्र",
+        "लाइसोसोम",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 1,
+    "explanation": {
+      "en": "Mitochondria are the major sites of aerobic respiration and oxidative phosphorylation in eukaryotic cells.",
+      "hi": "माइटोकॉन्ड्रिया यूकेरियोटिक कोशिकाओं में वायवीय श्वसन और ऑक्सीडेटिव फॉस्फोराइलेशन के प्रमुख स्थल हैं।"
+    }
+  },
+  {
+    "id": "bio002",
+    "subject": "Biology",
+    "chapter": "Cell: The Unit of Life",
+    "topic": "Plasma membrane",
+    "source": "Competitive",
+    "difficulty": "Medium",
+    "question": {
+      "en": "The fluid mosaic model of the plasma membrane was proposed by:",
+      "hi": "प्लाज्मा झिल्ली का तरल मोज़ेक मॉडल किसने प्रस्तावित किया था?"
+    },
+    "options": {
+      "en": [
+        "Watson and Crick",
+        "Singer and Nicolson",
+        "Schleiden and Schwann",
+        "Robertson",
+        "None of the above"
+      ],
+      "hi": [
+        "वॉटसन और क्रिक",
+        "सिंगर और निकोलसन",
+        "श्लाइडेन और श्वान",
+        "रॉबर्टसन",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 1,
+    "explanation": {
+      "en": "S. J. Singer and G. L. Nicolson proposed the fluid mosaic model in 1972.",
+      "hi": "एस. जे. सिंगर और जी. एल. निकोलसन ने 1972 में तरल मोज़ेक मॉडल प्रस्तावित किया था।"
+    }
+  },
+  {
+    "id": "bio003",
+    "subject": "Biology",
+    "chapter": "Biological Classification",
+    "topic": "Five-kingdom classification",
+    "source": "NCERT",
+    "difficulty": "Easy",
+    "question": {
+      "en": "Who proposed the five-kingdom classification system?",
+      "hi": "पाँच-जगत वर्गीकरण प्रणाली किसने प्रस्तावित की थी?"
+    },
+    "options": {
+      "en": [
+        "Carl Linnaeus",
+        "R. H. Whittaker",
+        "Ernst Haeckel",
+        "Carl Woese",
+        "None of the above"
+      ],
+      "hi": [
+        "कैरोलस लिनियस",
+        "आर. एच. व्हिटेकर",
+        "अर्न्स्ट हेकेल",
+        "कार्ल वूस",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 1,
+    "explanation": {
+      "en": "R. H. Whittaker proposed the five-kingdom classification in 1969.",
+      "hi": "आर. एच. व्हिटेकर ने 1969 में पाँच-जगत वर्गीकरण प्रस्तावित किया था।"
+    }
+  },
+  {
+    "id": "bio004",
+    "subject": "Biology",
+    "chapter": "Biological Classification",
+    "topic": "Kingdom Monera",
+    "source": "Competitive",
+    "difficulty": "Medium",
+    "question": {
+      "en": "Which feature is characteristic of members of Kingdom Monera?",
+      "hi": "जगत मोनेरा के सदस्यों की प्रमुख विशेषता कौन-सी है?"
+    },
+    "options": {
+      "en": [
+        "Membrane-bound nucleus",
+        "Prokaryotic cellular organization",
+        "Multicellular body in all members",
+        "Chitinous cell wall in all members",
+        "None of the above"
+      ],
+      "hi": [
+        "झिल्ली से घिरा केंद्रक",
+        "प्रोकैरियोटिक कोशिकीय संगठन",
+        "सभी सदस्यों में बहुकोशिकीय शरीर",
+        "सभी सदस्यों में काइटिन की कोशिका भित्ति",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 1,
+    "explanation": {
+      "en": "Monerans are prokaryotes and lack a membrane-bound nucleus. Their cell walls, when present, vary in composition.",
+      "hi": "मोनेरा के जीव प्रोकैरियोट होते हैं और उनमें झिल्ली से घिरा केंद्रक नहीं होता। जहाँ कोशिका भित्ति होती है, उसकी संरचना अलग-अलग हो सकती है।"
+    }
+  },
+  {
+    "id": "bio005",
+    "subject": "Biology",
+    "chapter": "Plant Kingdom",
+    "topic": "Alternation of generations",
+    "source": "NCERT",
+    "difficulty": "Medium",
+    "question": {
+      "en": "In bryophytes, the dominant and independent plant body is the:",
+      "hi": "ब्रायोफाइट्स में प्रमुख तथा स्वतंत्र पादप शरीर कौन-सा होता है?"
+    },
+    "options": {
+      "en": [
+        "Sporophyte",
+        "Gametophyte",
+        "Embryo",
+        "Protonema only",
+        "None of the above"
+      ],
+      "hi": [
+        "बीजाणुद्भिद",
+        "युग्मकोद्भिद",
+        "भ्रूण",
+        "केवल प्रोटोनीमा",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 1,
+    "explanation": {
+      "en": "The gametophyte is the dominant, photosynthetic and independent phase in bryophytes; the sporophyte remains attached to it.",
+      "hi": "ब्रायोफाइट्स में युग्मकोद्भिद प्रमुख, प्रकाश-संश्लेषी और स्वतंत्र अवस्था होती है; बीजाणुद्भिद इससे जुड़ा रहता है।"
+    }
+  },
+  {
+    "id": "bio006",
+    "subject": "Biology",
+    "chapter": "Plant Kingdom",
+    "topic": "Pteridophytes",
+    "source": "Competitive",
+    "difficulty": "Medium",
+    "question": {
+      "en": "The first terrestrial plants to possess well-differentiated vascular tissues are generally considered to be:",
+      "hi": "सुविभेदित संवहनी ऊतकों वाले प्रथम स्थलीय पौधे सामान्यतः किसे माना जाता है?"
+    },
+    "options": {
+      "en": [
+        "Algae",
+        "Bryophytes",
+        "Pteridophytes",
+        "Gymnosperms",
+        "None of the above"
+      ],
+      "hi": [
+        "शैवाल",
+        "ब्रायोफाइट्स",
+        "टेरिडोफाइट्स",
+        "अनावृतबीजी",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 2,
+    "explanation": {
+      "en": "Pteridophytes possess xylem and phloem and are the earliest vascular land plants in the standard plant-group sequence.",
+      "hi": "टेरिडोफाइट्स में जाइलम और फ्लोएम पाए जाते हैं। पादप समूहों के मानक क्रम में इन्हें प्रारंभिक संवहनी स्थलीय पौधे माना जाता है।"
+    }
+  },
+  {
+    "id": "bio007",
+    "subject": "Biology",
+    "chapter": "Human Physiology",
+    "topic": "Respiration",
+    "source": "NCERT",
+    "difficulty": "Easy",
+    "question": {
+      "en": "The site of gaseous exchange in human lungs is the:",
+      "hi": "मानव फेफड़ों में गैसों का आदान-प्रदान कहाँ होता है?"
+    },
+    "options": {
+      "en": [
+        "Trachea",
+        "Bronchi",
+        "Alveoli",
+        "Larynx",
+        "None of the above"
+      ],
+      "hi": [
+        "श्वासनली",
+        "श्वसनी",
+        "वायुकोष्ठिका",
+        "स्वरयंत्र",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 2,
+    "explanation": {
+      "en": "Alveoli provide a large, thin-walled surface closely associated with capillaries for gas exchange.",
+      "hi": "वायुकोष्ठिकाएँ पतली दीवारों वाला विशाल सतह क्षेत्र प्रदान करती हैं, जिनके चारों ओर केशिकाएँ होती हैं।"
+    }
+  },
+  {
+    "id": "bio008",
+    "subject": "Biology",
+    "chapter": "Human Physiology",
+    "topic": "Cardiac cycle",
+    "source": "Competitive",
+    "difficulty": "Hard",
+    "question": {
+      "en": "The normal resting heart rate of a healthy adult is commonly given as approximately:",
+      "hi": "एक स्वस्थ वयस्क की सामान्य विश्राम अवस्था की हृदय गति लगभग कितनी मानी जाती है?"
+    },
+    "options": {
+      "en": [
+        "20–40 beats per minute",
+        "40–60 beats per minute",
+        "72 beats per minute",
+        "120–140 beats per minute",
+        "None of the above"
+      ],
+      "hi": [
+        "20–40 धड़कन प्रति मिनट",
+        "40–60 धड़कन प्रति मिनट",
+        "72 धड़कन प्रति मिनट",
+        "120–140 धड़कन प्रति मिनट",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 2,
+    "explanation": {
+      "en": "A textbook reference value is about 72 beats per minute, although normal resting rates vary among individuals.",
+      "hi": "पाठ्यपुस्तकों में लगभग 72 धड़कन प्रति मिनट का संदर्भ मान दिया जाता है, हालाँकि व्यक्तियों में सामान्य विश्राम हृदय गति अलग हो सकती है।"
+    }
+  },
+  {
+    "id": "bio009",
+    "subject": "Biology",
+    "chapter": "Genetics and Evolution",
+    "topic": "Mendelian genetics",
+    "source": "NCERT",
+    "difficulty": "Easy",
+    "question": {
+      "en": "A cross between two heterozygous individuals for a single gene (Aa × Aa) gives what genotypic ratio?",
+      "hi": "एक जीन के लिए दो विषमयुग्मजी व्यक्तियों (Aa × Aa) के संकरण से कौन-सा जीनोटाइपिक अनुपात प्राप्त होता है?"
+    },
+    "options": {
+      "en": [
+        "3:1",
+        "1:2:1",
+        "9:3:3:1",
+        "1:1",
+        "None of the above"
+      ],
+      "hi": [
+        "3:1",
+        "1:2:1",
+        "9:3:3:1",
+        "1:1",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 1,
+    "explanation": {
+      "en": "The genotypes are AA, Aa and aa in the ratio 1:2:1.",
+      "hi": "प्राप्त जीनोटाइप AA, Aa और aa का अनुपात 1:2:1 होता है।"
+    }
+  },
+  {
+    "id": "bio010",
+    "subject": "Biology",
+    "chapter": "Genetics and Evolution",
+    "topic": "Molecular genetics",
+    "source": "Competitive",
+    "difficulty": "Medium",
+    "question": {
+      "en": "Which enzyme joins Okazaki fragments during DNA replication?",
+      "hi": "DNA प्रतिकृति के दौरान ओकाज़ाकी खंडों को कौन-सा एंजाइम जोड़ता है?"
+    },
+    "options": {
+      "en": [
+        "DNA helicase",
+        "DNA ligase",
+        "RNA polymerase",
+        "Primase",
+        "None of the above"
+      ],
+      "hi": [
+        "DNA हेलिकेज",
+        "DNA लाइगेज",
+        "RNA पॉलीमरेज",
+        "प्राइमेज",
+        "इनमें से कोई नहीं"
+      ]
+    },
+    "answer": 1,
+    "explanation": {
+      "en": "DNA ligase seals nicks in the sugar-phosphate backbone, joining adjacent Okazaki fragments on the lagging strand.",
+      "hi": "DNA लाइगेज शर्करा-फॉस्फेट रीढ़ में उपस्थित टूटे स्थानों को जोड़कर लैगिंग स्ट्रैंड के ओकाज़ाकी खंडों को मिलाता है।"
+    }
+  }
+]

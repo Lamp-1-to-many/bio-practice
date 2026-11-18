@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#163b35"><title>BioPractice — Personal Biology MCQ</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">B</div><div><strong>BioPractice</strong><small>Personal Biology MCQ Studio</small></div></div>
+  <div class="top-actions"><span id="storageStatus" class="storage">Local database</span><button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">◐</button></div>
+</header>
+<main class="app-shell">
+  <aside class="sidebar">
+    <button class="nav-item active" data-view="dashboard">⌂ <span>Dashboard</span></button>
+    <button class="nav-item" data-view="bank">▤ <span>Question bank</span></button>
+    <button class="nav-item" data-view="practice">◎ <span>Practice</span></button>
+    <button class="nav-item" data-view="examSetup">◷ <span>Exam mode</span></button>
+    <button class="nav-item" data-view="history">▥ <span>Performance</span></button>
+    <div class="side-note"><strong>Personal workspace</strong><p>Your questions and results stay in this browser. Export backups regularly.</p></div>
+  </aside>
+  <section class="content">
+    <section id="dashboard" class="view active">
+      <div class="welcome-row"><div><p class="eyebrow">BIOLOGY LEARNING WORKSPACE</p><h1>Study with purpose.</h1><p class="muted">Build your question bank, practise by chapter, and evaluate full-length performance.</p></div><button class="primary" id="quickPractice">Start practice →</button></div>
+      <div class="stats-grid">
+        <article class="stat-card"><span>Questions in bank</span><strong id="statQuestions">0</strong><small>Saved on this device</small></article>
+        <article class="stat-card"><span>Exams completed</span><strong id="statExams">0</strong><small>Across all sessions</small></article>
+        <article class="stat-card"><span>Average accuracy</span><strong id="statAccuracy">—</strong><small>Based on attempted questions</small></article>
+        <article class="stat-card"><span>Bookmarked</span><strong id="statBookmarks">0</strong><small>For focused revision</small></article>
+      </div>
+      <div class="section-heading"><div><p class="eyebrow">GET STARTED</p><h2>Your study routes</h2></div></div>
+      <div class="route-grid">
+        <button class="route-card" data-go="bank"><span class="route-icon">＋</span><strong>Build question bank</strong><small>Add, edit, import and organise bilingual questions.</small><span class="route-link">Manage questions →</span></button>
+        <button class="route-card" data-go="practice"><span class="route-icon">◎</span><strong>Chapter-wise practice</strong><small>Practise at your own pace with instant explanations.</small><span class="route-link">Begin practice →</span></button>
+        <button class="route-card" data-go="examSetup"><span class="route-icon">◷</span><strong>Full-length examination</strong><small>Set a timer, marking scheme and question selection.</small><span class="route-link">Configure exam →</span></button>
+      </div>
+      <div class="panel"><div class="section-heading"><div><p class="eyebrow">RECENT ACTIVITY</p><h2>Latest results</h2></div><button class="text-btn" data-go="history">View all</button></div><div id="recentResults" class="empty-state">No completed sessions yet. Your results will appear here.</div></div>
+    </section>
+
+    <section id="bank" class="view">
+      <div class="page-heading"><div><p class="eyebrow">CONTENT MANAGEMENT</p><h1>Question bank</h1><p class="muted">Store NCERT-based and competitive-exam questions in English and Hindi.</p></div><button class="primary" id="addQuestionBtn">＋ Add question</button></div>
+      <div class="toolbar"><input id="bankSearch" placeholder="Search question, topic or chapter…" aria-label="Search questions"><select id="bankChapter"><option value="">All chapters</option></select><select id="bankSource"><option value="">All sources</option><option>NCERT</option><option>Competitive</option></select><button class="secondary" id="importBtn">Import JSON</button><button class="secondary" id="exportBtn">Export JSON</button><input type="file" id="importFile" accept=".json,application/json" hidden></div>
+      <div class="table-wrap"><table><thead><tr><th>Question</th><th>Chapter / Topic</th><th>Source</th><th>Level</th><th>Actions</th></tr></thead><tbody id="questionRows"></tbody></table></div>
+      <p class="footnote">Tip: use the provided JSON format in <code>sample-questions.json</code>. Import merges questions by ID and updates matching records.</p>
+    </section>
+
+    <section id="practice" class="view">
+      <div class="page-heading"><div><p class="eyebrow">LEARNING MODE</p><h1>Chapter-wise practice</h1><p class="muted">Work through selected topics and review the explanation after each answer.</p></div></div>
+      <div class="panel setup-panel">
+        <div class="field-grid">
+          <label>Chapter<select id="practiceChapter"><option value="">All chapters</option></select></label>
+          <label>Question source<select id="practiceSource"><option value="both">Both sources</option><option value="NCERT">NCERT-based</option><option value="Competitive">Competitive</option></select></label>
+          <label>Question order<select id="practiceOrder"><option value="random">Random</option><option value="sequential">Bank order</option></select></label>
+          <label>Number of questions<input id="practiceCount" type="number" min="1" max="500" value="10"></label>
+        </div><button class="primary" id="startPractice">Start practice</button>
+      </div>
+      <div id="practiceArea" class="quiz-area hidden"></div>
+    </section>
+
+    <section id="examSetup" class="view">
+      <div class="page-heading"><div><p class="eyebrow">ASSESSMENT MODE</p><h1>Examination setup</h1><p class="muted">Create a chapter test or a full-length Biology examination.</p></div></div>
+      <div class="panel setup-panel">
+        <div class="field-grid">
+          <label>Examination arrangement<select id="examArrangement"><option value="full">Full-length Biology</option><option value="chapter">Chapter-wise test</option></select></label>
+          <label id="examChapterWrap">Chapter<select id="examChapter"><option value="">Choose a chapter</option></select></label>
+          <label>Question source<select id="examSource"><option value="both">Both sources</option><option value="NCERT">NCERT-based</option><option value="Competitive">Competitive</option></select></label>
+          <label>Question selection<select id="examOrder"><option value="random">Random selection</option><option value="sequential">Bank order</option></select></label>
+          <label>Number of questions<input id="examCount" type="number" min="1" max="500" value="30"></label>
+          <label>Duration (minutes)<input id="examDuration" type="number" min="1" max="300" value="30"></label>
+          <label>Marks for correct answer<input id="positiveMarks" type="number" min="0" step="0.25" value="1"></label>
+          <label>Negative marks per wrong answer<input id="negativeMarks" type="number" min="0" step="0.25" value="0.25"></label>
+        </div>
+        <div class="notice">The question bank is stored locally. This is a personal practice tool, not a secure examination platform.</div>
+        <button class="primary" id="startExam">Start examination →</button>
+      </div>
+    </section>
+
+    <section id="history" class="view">
+      <div class="page-heading"><div><p class="eyebrow">PROGRESS REVIEW</p><h1>Performance</h1><p class="muted">Review completed practice and examination sessions.</p></div><button class="secondary danger-text" id="clearHistory">Clear history</button></div>
+      <div id="historyList" class="history-list"></div>
+    </section>
+
+    <section id="results" class="view">
+      <div class="page-heading"><div><p class="eyebrow">SESSION SUMMARY</p><h1>Result analysis</h1><p class="muted" id="resultSubtitle"></p></div><button class="primary" id="backDashboard">Dashboard</button></div>
+      <div id="resultContent"></div>
+    </section>
+  </section>
+</main>
+
+<div id="questionModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Add question</h2><button class="icon-btn" id="closeModal" aria-label="Close">×</button></div>
+ <form id="questionForm">
+  <input type="hidden" id="qId">
+  <div class="field-grid">
+   <label>Chapter<input id="qChapter" required placeholder="e.g. Cell: The Unit of Life"></label>
+   <label>Topic<input id="qTopic" required placeholder="e.g. Cell organelles"></label>
+   <label>Source<select id="qSource"><option>NCERT</option><option>Competitive</option></select></label>
+   <label>Difficulty<select id="qDifficulty"><option>Easy</option><option>Medium</option><option>Hard</option></select></label>
+  </div>
+  <label>Question (English)<textarea id="qEn" required rows="2"></textarea></label><label>Question (Hindi)<textarea id="qHi" required rows="2"></textarea></label>
+  <div class="options-editor" id="optionsEditor"></div>
+  <div class="field-grid"><label>Correct option<select id="qAnswer"><option value="0">Option A</option><option value="1">Option B</option><option value="2">Option C</option><option value="3">Option D</option><option value="4">Option E</option></select></label></div>
+  <label>Explanation (English)<textarea id="qExpEn" rows="2"></textarea></label><label>Explanation (Hindi)<textarea id="qExpHi" rows="2"></textarea></label>
+  <div class="modal-actions"><button type="button" class="secondary" id="cancelModal">Cancel</button><button type="submit" class="primary">Save question</button></div>
+ </form></div>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
